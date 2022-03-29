@@ -1,0 +1,9 @@
+build/*
+public/*
+docs/*
+templates/*
+src/react-app-env.d.ts
+src/serviceWorker.ts
+tailwind.config.js
+vite.config.ts
+src/react-i18next.d.ts

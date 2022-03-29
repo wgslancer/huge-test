@@ -14,13 +14,13 @@ const NavListDesktop = ({ navList }: NavListDesktopProps) => {
       {navList.map((nav) => (
         <HoverUnderlineNav
           href="https://www.google.com"
-          className="mx-2"
+          className="mx-2 md:mx-4"
           key={nav.id}
         >
           {t(nav.key)}
         </HoverUnderlineNav>
       ))}
-      <div className="mx-4">
+      <div className="mx-2 md:mx-4">
         <ChangeLanguage />
       </div>
     </div>

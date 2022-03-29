@@ -1,7 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import { NavType } from 'src/common/types/types';
 import ChangeLanguage from 'src/components/common/ChangeLanguage';
-import Nav from 'src/components/common/Nav';
+import HoverUnderlineNav from 'src/components/common/Nav/HoverUnderlineNav/HoverUnderlineNav';
 
 interface NavListDesktopProps {
   navList: NavType[];
@@ -12,9 +12,13 @@ const NavListDesktop = ({ navList }: NavListDesktopProps) => {
   return (
     <div className="hidden lg:flex">
       {navList.map((nav) => (
-        <Nav href="https://www.google.com" className="mx-4" key={nav.id}>
+        <HoverUnderlineNav
+          href="https://www.google.com"
+          className="mx-4"
+          key={nav.id}
+        >
           {t(nav.key)}
-        </Nav>
+        </HoverUnderlineNav>
       ))}
       <div className="mx-4">
         <ChangeLanguage />

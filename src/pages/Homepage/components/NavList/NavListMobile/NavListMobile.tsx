@@ -1,7 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import { NavType } from 'src/common/types/types';
 import ChangeLanguage from 'src/components/common/ChangeLanguage';
-import Nav from 'src/components/common/Nav';
+import HoverUnderlineNav from 'src/components/common/Nav/HoverUnderlineNav/HoverUnderlineNav';
 
 interface NavListMobileProps {
   navList: NavType[];
@@ -12,15 +12,17 @@ const NavListMobile = ({ navList }: NavListMobileProps) => {
 
   return (
     <div className="group relative lg:hidden">
-      <div className="animate-appear group-hover:flex hidden absolute top-4 right-0 flex-col">
+      <div className="animate-appear group-hover:flex hidden absolute top-4 right-0 flex-col w-28">
         {navList.map((nav) => (
-          <Nav className="my-2" href="https://www.google.com" key={nav.id}>
+          <HoverUnderlineNav
+            className="my-2 break-normal"
+            href="https://www.google.com"
+            key={nav.id}
+          >
             {t(nav.key)}
-          </Nav>
+          </HoverUnderlineNav>
         ))}
-        <div className="mx-4">
-          <ChangeLanguage />
-        </div>
+        <ChangeLanguage />
       </div>
       <img src="icons/dehaze.svg" alt="dehaze" />
     </div>

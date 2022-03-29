@@ -1,17 +1,13 @@
 import { navList } from 'src/common/constants/constants';
 import AppBar from 'src/components/common/AppBar';
-import NavListDesktop from 'src/pages/components/NavList/NavListDesktop';
-import NavListMobile from 'src/pages/components/NavList/NavListMobile';
-import { gsap } from 'gsap';
-import { useEffect, useRef } from 'react';
+import NavListDesktop from 'src/pages/Homepage/components/NavList/NavListDesktop';
+import NavListMobile from 'src/pages/Homepage/components/NavList/NavListMobile';
+import { useRef } from 'react';
+import useAppearAnimation from 'src/hooks/useAppearAnimation/useAppearAnimation';
 
 const NavBar = () => {
   const appBarRef = useRef(null);
-  useEffect(() => {
-    gsap.to(appBarRef.current, {
-      opacity: 1,
-    });
-  }, []);
+  useAppearAnimation(appBarRef);
   return (
     <AppBar ref={appBarRef} className="flex justify-center opacity-0">
       <div className="container h-full flex items-center justify-between mx-4 lg:mx-0">

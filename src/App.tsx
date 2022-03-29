@@ -1,4 +1,4 @@
-import Homepage from 'src/pages/components/HomepageRoute';
+import Homepage from 'src/pages/Homepage/components/HomepageRoute';
 
 function App() {
   return (

@@ -1,4 +1,4 @@
-import { NavType } from 'src/common/types/types';
+import { Feature, NavType } from 'src/common/types/types';
 
 export const navList: Array<NavType> = [
   {
@@ -26,3 +26,43 @@ export const navList: Array<NavType> = [
     key: 'how_to_invest',
   },
 ];
+
+export const featureList: Array<Feature> = [
+  {
+    key: '01',
+    titleKey: 'feature-section.title',
+    nameKey: 'feature-section.name',
+    nav: 196.977,
+    netAssets: 7309193,
+    dayChange: -1094,
+    issued: 3710686634,
+  },
+  {
+    key: '02',
+    titleKey: 'feature-section.title',
+    nameKey: 'feature-section.name',
+    nav: 196.977,
+    netAssets: 7309193,
+    dayChange: -1094,
+    issued: 3710686634,
+  },
+  {
+    key: '03',
+    titleKey: 'feature-section.title',
+    nameKey: 'feature-section.name',
+    nav: 196.977,
+    netAssets: 7309193,
+    dayChange: -1094,
+    issued: 3710686634,
+  },
+  {
+    key: '04',
+    titleKey: 'feature-section.title',
+    nameKey: 'feature-section.name',
+    nav: 196.977,
+    netAssets: 7309193,
+    dayChange: -1094,
+    issued: 3710686634,
+  },
+];
+

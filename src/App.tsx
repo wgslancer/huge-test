@@ -2,7 +2,7 @@ import Homepage from 'src/pages/Homepage/components/HomepageRoute';
 
 function App() {
   return (
-    <div className="min-h-screen w-full">
+    <div className="App min-h-screen w-full">
       <Homepage />
     </div>
   );

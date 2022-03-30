@@ -12,7 +12,7 @@ const NavListMobile = ({ navList }: NavListMobileProps) => {
 
   return (
     <div className="group relative lg:hidden">
-      <div className="animate-appear group-hover:flex hidden absolute top-4 right-0 flex-col w-28">
+      <div className="animate-appear bg-white p-2 group-hover:flex hidden absolute top-4 right-0 flex-col w-28">
         {navList.map((nav) => (
           <HoverUnderlineNav
             className="my-2 break-normal"

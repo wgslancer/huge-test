@@ -10,10 +10,10 @@ const NavBar = () => {
   useAppearAnimation(appBarRef);
   return (
     <AppBar ref={appBarRef} className="flex justify-center opacity-0">
-      <div className="container h-full flex items-center justify-between mx-4 lg:mx-0">
-        <img src="images/logo.svg" alt="" />
-        <div>
-          <div className="flex">
+      <div className="container h-full grid grid-cols-12 items-center p-4 md:p-0">
+        <img className="col-span-5" src="images/logo.svg" alt="logo" />
+        <div className="col-span-7 justify-self-end md:justify-self-start">
+          <div className="flex md:first:">
             <NavListDesktop navList={navList} />
             <div className="mr-4 lg:mr-0">
               <img src="icons/search.svg" alt="search-icon" />

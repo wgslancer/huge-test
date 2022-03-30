@@ -8,9 +8,10 @@ const LandingSection = () => {
   const { t } = useTranslation();
   useAppearAnimation(sectionRef);
   return (
-    <div ref={sectionRef} className="min-h-screen flex justify-center md:p-0">
-      <div className="container flex flex-col items-center md:ml-80 mt-40 p-4">
-        <article className="prose prose-h1:font-normal">
+    <div ref={sectionRef} className="w-full flex justify-center">
+      <div className="container grid xs:grid-rows-6 justify-center md:grid-cols-12 py-8">
+        <div className="xs:row-span-2 md:col-span-5"></div>
+        <article className="xs:row-span-4 md:mt-40 md:col-span-7 prose prose-h1:font-normal">
           <h1 className="text-xl md:text-4xl">
             {t('landing-section.progressive-solutions')}
           </h1>

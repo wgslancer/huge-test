@@ -6,9 +6,6 @@ module.exports = {
         'nikko-teal': '#00A4B8',
         grey: '#474747',
       },
-      backgroundImage: {
-        'background-illustration': "url('images/illustration-background.svg')",
-      },
       animation: {
         appear: 'appear 0.3s linear',
       },

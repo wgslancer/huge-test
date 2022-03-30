@@ -8,7 +8,8 @@
     "preview": "vite preview",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx src --color",
     "format": "prettier --write 'src/**/*.{ts,tsx,scss,css,json}'",
-    "isready": "npm run format && npm run lint && npm run build"
+    "isready": "npm run format && npm run lint && npm run build",
+    "docker-build": "yarn isready && docker build -t huge . && docker run -d --name huge-test -p 80:80 huge"
   },
   "dependencies": {
     "gsap": "^3.9.1",

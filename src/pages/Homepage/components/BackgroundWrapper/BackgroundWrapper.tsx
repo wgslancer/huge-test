@@ -10,7 +10,7 @@ const BackgroundWrapper = ({ children }: BackgroundWrapperProps) => {
   return (
     <div
       ref={backgroundRef}
-      className="bg-[position:0%_0%] md:bg-[position:0%_100%] bg-background-illustration bg-no-repeat bg-[length:50%_50%] md:bg-[length:75%_75%] flex flex-col items-center bg-fixed"
+      className="bg-[position:0%_0%] md:bg-[position:-100%_100%] bg-background-illustration bg-no-repeat bg-[length:50%_50%] md:bg-[length:75%_75%] flex flex-col items-center bg-fixed"
     >
       {children}
     </div>

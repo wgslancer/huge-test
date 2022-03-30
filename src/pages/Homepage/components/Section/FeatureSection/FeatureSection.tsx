@@ -1,7 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { featureList } from 'src/common/constants/constants';
-import { TranslateKey } from 'src/common/types/types';
 import { currencyFormat, numberSeparator } from 'src/common/utils/utils';
 import IconNav from 'src/components/common/Nav/IconNav/IconNav';
 import useAppearAnimation from 'src/hooks/useAppearAnimation/useAppearAnimation';
@@ -24,7 +23,7 @@ const FeatureSection = () => {
     <div className="w-full flex justify-center py-8">
       <div className="container grid xs:grid-rows-6 justify-center md:grid-cols-12 place-self-center">
         <article className="xs:row-span-1 py-8 md:hidden md:py-0 prose prose-h1:font-normal">
-          <h1>{t(title as TranslateKey)}</h1>
+          <h1>{t(title)}</h1>
         </article>
         <article className="xs:row-span-1 md:col-span-5 flex md:flex-col md:justify-center md:items-center prose prose-h1:text-nikko-teal prose-h1:font-medium md:text-4xl">
           {featureList.map((feature, index) => {
@@ -42,9 +41,7 @@ const FeatureSection = () => {
           })}
         </article>
         <div ref={contentRef} className="xs:row-span-4 md:col-span-7">
-          <h1 className="text-5xl mb-4 hidden md:block">
-            {t(title as TranslateKey)}
-          </h1>
+          <h1 className="text-5xl mb-4 hidden md:block">{t(title)}</h1>
           <h3 className="text-nikko-teal mb-6">{t('feature-section.name')}</h3>
           <div>
             <span className="mr-4">NAV (per 100 shares)</span>

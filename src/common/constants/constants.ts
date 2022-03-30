@@ -65,4 +65,3 @@ export const featureList: Array<Feature> = [
     issued: 3710686634,
   },
 ];
-

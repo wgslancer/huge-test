@@ -11,7 +11,7 @@ const useBackgroundAnimation = (target: React.MutableRefObject<any>) => {
     gsap.from(target.current, {
       duration: 0.3,
       backgroundPositionX: 0,
-      backgroundPositionY: '-50%',
+      backgroundPositionY: '-20%',
       ease: Power3.easeInOut,
       scrollTrigger: {
         trigger: '.App',

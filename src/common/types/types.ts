@@ -1,10 +1,6 @@
-import { CustomTypeOptions } from 'react-i18next';
-
-export type TranslateKey = keyof CustomTypeOptions['resources']['homepageNs'];
-
 export type NavType = {
   id: number;
-  key: TranslateKey;
+  key: string;
 };
 
 export type Feature = {

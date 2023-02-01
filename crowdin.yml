@@ -1,0 +1,3 @@
+files:
+  - source: /public/locales/en/hompage.json
+    translation: /public/locales/%locale%/hompage.json

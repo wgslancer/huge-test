@@ -31,5 +31,5 @@ jobs:
         uses: denoland/deployctl@v1
         with:
           project: "wgslancer-huge-test"
-          entrypoint: "index.html" # 📝 Update the entrypoint
+          entrypoint: "src/main.tsx" # 📝 Update the entrypoint
           root: "dist"
